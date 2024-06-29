@@ -17,6 +17,7 @@ find_package(KF6KIO)
 find_package(KF6Solid)
 find_package(KF6WindowSystem)
 find_package(KF6Config)
+find_package(KF6XmlGui)
 
 qt_add_dbus_adaptor(DBUS_SOURCES
                      com.lingmo.FileManager.xml
@@ -85,6 +86,7 @@ target_link_libraries(lingmo-filemanager
   KF6::Solid
   KF6::WindowSystem
   KF6::ConfigCore
+  KF6::XmlGui
 
   # LingmoUI
 )
