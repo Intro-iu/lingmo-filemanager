@@ -32,6 +32,7 @@
 #include <QSortFilterProxyModel>
 #include <QItemSelectionModel>
 #include <QQmlParserStatus>
+#include <QRegularExpression>
 #include <QQuickItem>
 #include <QPointer>
 
@@ -300,7 +301,7 @@ private:
     QString m_filterPattern;
     bool m_filterPatternMatchAll;
     QSet<QString> m_mimeSet;
-    QList<QRegExp> m_regExps;
+    QList<QRegularExpression> m_regExps;
 
     bool m_complete;
     bool m_isDesktop;
