@@ -21,7 +21,6 @@
 #define DIRLISTER_H
 
 #include <KDirLister>
-#include <KCoreDirLister>
 #include <KIO/Job>
 
 class DirLister : public KDirLister
@@ -36,7 +35,7 @@ Q_SIGNALS:
     void error(const QString &string);
 
 protected:
-    void handleError(KIO::Job *job) override;
+    void handleError(KIO::Job *job);
 };
 
 #endif // DIRLISTER_H
