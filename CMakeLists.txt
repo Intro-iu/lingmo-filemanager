@@ -28,7 +28,6 @@ add_executable(lingmo-filemanager
   window.cpp
   dbusinterface.cpp
 
-  
   draganddrop/declarativedroparea.cpp
   draganddrop/declarativedragdropevent.cpp
   draganddrop/declarativemimedata.cpp
