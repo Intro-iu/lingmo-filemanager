@@ -21,6 +21,7 @@
 #define DIRLISTER_H
 
 #include <KDirLister>
+#include <KCoreDirLister>
 #include <KIO/Job>
 
 class DirLister : public KDirLister
